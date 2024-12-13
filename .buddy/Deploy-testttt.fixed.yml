@@ -4,3 +4,11 @@
   - "refs/heads/main"
   fail_on_prepare_env_warning: true
   resources: "X2LARGE"
+  actions:
+  - action: "df -h"
+    type: "BUILD"
+    docker_image_name: "buddy/localshell"
+    docker_image_tag: "ubuntu_24.04"
+    execute_commands:
+    - "df -h"
+    shell: "BASH"
