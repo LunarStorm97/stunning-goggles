@@ -8,7 +8,7 @@
   - action: "    python-is-python3 python3 bc ccache libstdc++6 libssl-dev repo"
     type: "BUILD"
     docker_image_name: "library/ubuntu"
-    docker_image_tag: "20.04"
+    docker_image_tag: "latest"
     execute_commands:
     - "sudo apt-get update"
     - "sudo apt-get install -y git-core gnupg flex bison gperf build-essential zip curl \\"
